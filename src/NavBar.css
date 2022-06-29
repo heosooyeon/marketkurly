@@ -1,0 +1,108 @@
+* {
+    margin:0
+}
+
+.NavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+.alertbtn {
+    background-color: none;
+    border:solid gainsboro 0.5px;
+    border-radius: 50px;
+    font-size: 11px;
+}
+
+.logoImg {
+    width:105px;
+    height:70px;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1050px;
+}
+
+
+nav {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+a {
+    cursor:pointer;
+    font-size:12.5px;
+}
+
+ul {
+    list-style:none;
+    margin:0;
+    padding : 0;
+    display:flex;
+}
+
+
+ul li {
+    list-style: none;
+    margin-right:11px;
+}
+
+.funcmenu ul li a {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.funcmenu ul li {
+    margin-right:0px;
+    margin-left:65px;
+}
+
+.funcmenu {
+    margin-top:10px;
+}
+
+#userMenu {
+    float:left;
+}
+
+.inputBox {
+    position:relative;
+    overflow : hidden;
+}
+
+#search{
+    border-radius: 20px;
+    width:215px;
+    height: 36px;
+    padding:0px 15px;
+    font-size:10px;
+    background-color: #f7f7f7f7;
+    border:0 solid black;
+  }
+
+  .searchicon{
+    width : 30px;
+    height : 30px;
+    right:0px;
+    top:0px;
+    padding:3px 3px;
+    position : absolute;
+  }
+
+  .funcmenu ul .iconmenu {
+    margin-left:18px;
+  }
+
+  .funcmenu ul .iconmenu ul li {
+    margin-right:10.5px;
+    margin-left:10.5px;
+  }
+  
+  

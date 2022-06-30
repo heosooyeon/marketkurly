@@ -9,8 +9,8 @@ export default function Content() {
                 <div className='prodImgAndFunc'>
                   
                   { d.descripCard ? <div className="card-descrip-badge" ><p>{d.descripCard}</p></div> : ""}
-                  <img className='card--badge' src="https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/cart_white_45_45.svg"></img>
-                  <img className="prodImg" style={{width:'249px', height:'320px'}} src={`/image/banner_product/${d.img}.png`}></img>
+                  <img className='card--badge' src={"https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/cart_white_45_45.svg"}></img>
+                  <img className="prodImg" style={{width:'249px', height:'320px'}} src={process.env.PUBLIC_URL+ `/image/banner_product/${d.img}.png`}></img>
                 </div>
                 <p style={{ marginTop:'10px', marginBottom:'5px',fontWeight:'530'}}>{d.title}</p>
                 <span style={{fontSize:'16px',fontWeight:'bold', color:'orangered', marginRight:'5px'}}>{d.discount}%</span>
@@ -25,7 +25,7 @@ export default function Content() {
       return (
       <div className="Content">
         <div class="cropped">
-          <img src={'image/banner/1.webp'}/>
+          <img src={process.env.PUBLIC_URL+'/image/banner/1.webp'}/>
         </div>
         <br></br>
         <br></br>
@@ -33,7 +33,7 @@ export default function Content() {
         <ul style={{listStyleType:'none', paddingTop:'35px', paddingBottom:'40px'}}>
           {RecomProdEl}
         </ul>
-        <img className="ad" src="./advertise.png"></img>
+        <img className="ad" src={process.env.PUBLIC_URL+"/advertise.png"}></img>
         </div>
       );
 }
